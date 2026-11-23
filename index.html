@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10233d">
+  <meta name="description" content="24 kleine Überraschungen in einem verschneiten Weihnachtsdorf.">
+  <title>Unser kleines Weihnachtsdorf ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="snow" aria-hidden="true" id="snow"></div>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">Ein kleines bisschen Weihnachtszauber</p>
+      <h1>Unser Weihnachtsdorf <span>♡</span></h1>
+      <p class="subtitle">24 kleine Überraschungen nur für dich</p>
+      <p class="hint">Jeden Tag wartet ein neues Türchen auf dich.</p>
+    </header>
+
+    <section class="village" aria-label="Verschneites Weihnachtsdorf">
+      <img src="assets/winterdorf.jpg" alt="Verschneites Weihnachtsdorf mit warm leuchtenden Häusern und Weihnachtsbaum">
+      <div class="image-caption">Willkommen in unserem kleinen Winterwunderland</div>
+    </section>
+
+    <section class="calendar-section">
+      <div class="section-heading">
+        <span>✦</span>
+        <h2>Deine 24 Türchen</h2>
+        <span>✦</span>
+      </div>
+      <p class="section-note">Tippe auf ein Häuschen, um deine Überraschung zu entdecken.</p>
+      <div class="doors" id="doors"></div>
+    </section>
+    <footer>Mit ganz viel Liebe für dich gemacht <span>♡</span></footer>
+  </main>
+
+  <dialog id="surprise-dialog">
+    <button class="close" id="close-dialog" aria-label="Schließen">×</button>
+    <div class="modal-snowflake">❄</div>
+    <p class="modal-day" id="modal-day"></p>
+    <h2 id="modal-title"></h2>
+    <div class="modal-message" id="modal-message"></div>
+    <p class="modal-signoff">Ich hab dich lieb ♡</p>
+  </dialog>
+  <script src="surprises.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
