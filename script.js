@@ -38,7 +38,8 @@ dialog.addEventListener('click', event => {
 // Dezenter Schneefall im Hintergrund
 const snow = document.getElementById('snow');
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  for (let i = 0; i < 45; i++) {
+  const flakeCount = window.matchMedia('(max-width: 760px)').matches ? 22 : 45;
+  for (let i = 0; i < flakeCount; i++) {
     const flake = document.createElement('span');
     flake.className = 'snowflake';
     flake.textContent = Math.random() > .5 ? '❄' : '•';
